@@ -4,17 +4,17 @@
     android:versionName="1.0" >
 
 
-<!--    <application-->
-<!--        android:allowBackup="true">-->
-<!--        <activity android:name=".MainXgjActivity"/>-->
-<!--        <activity android:name=".BalanceActivity"/>-->
-<!--        <activity android:name=".AboutActivity"/>-->
-<!--        <activity android:name=".DownActivity"/>-->
-<!--        <activity android:name=".LimitSwitchActivity"/>-->
-<!--        <activity android:name=".UpActivity"/>-->
-<!--        <activity android:name=".UpAndDownZoomActivity"/>-->
-<!--        <activity android:name=".XGJMainActivity"/>-->
-<!--        <activity android:name=".XianSuQiActivity"/>-->
-<!--    </application>-->
+    <application
+        android:allowBackup="true">
+        <activity android:name=".MainXgjActivity"/>
+        <activity android:name=".BalanceActivity"/>
+        <activity android:name=".AboutActivity"/>
+        <activity android:name=".DownActivity"/>
+        <activity android:name=".LimitSwitchActivity"/>
+        <activity android:name=".UpActivity"/>
+        <activity android:name=".UpAndDownZoomActivity"/>
+        <activity android:name=".XGJMainActivity"/>
+        <activity android:name=".XianSuQiActivity"/>
+    </application>
 
 </manifest>

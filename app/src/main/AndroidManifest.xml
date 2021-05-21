@@ -10,17 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
 
-
-        <activity android:name="com.liicon.xgj.MainXgjActivity"/>
-        <activity android:name="com.liicon.xgj.BalanceActivity"/>
-        <activity android:name="com.liicon.xgj.AboutActivity"/>
-        <activity android:name="com.liicon.xgj.DownActivity"/>
-        <activity android:name="com.liicon.xgj.LimitSwitchActivity"/>
-        <activity android:name="com.liicon.xgj.UpActivity"/>
-        <activity android:name="com.liicon.xgj.UpAndDownZoomActivity"/>
-        <activity android:name="com.liicon.xgj.XGJMainActivity"/>
-        <activity android:name="com.liicon.xgj.XianSuQiActivity"/>
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

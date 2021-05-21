@@ -1,0 +1,20 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.liicon.common"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->/Users/tomsmax/Documents/yunxiao/dongguan/dgGis/app_android/dgGis/common/src/main/AndroidManifest.xml:6:5-47
+8        android:minSdkVersion="22"
+8-->/Users/tomsmax/Documents/yunxiao/dongguan/dgGis/app_android/dgGis/common/src/main/AndroidManifest.xml:6:5-47
+9        android:targetSdkVersion="30" />
+9-->/Users/tomsmax/Documents/yunxiao/dongguan/dgGis/app_android/dgGis/common/src/main/AndroidManifest.xml:6:15-44
+10
+11    <!-- android:minSdkVersion="8" -->
+12    <application android:allowBackup="true" >
+12-->/Users/tomsmax/Documents/yunxiao/dongguan/dgGis/app_android/dgGis/common/src/main/AndroidManifest.xml:10:5-12:19
+12-->/Users/tomsmax/Documents/yunxiao/dongguan/dgGis/app_android/dgGis/common/src/main/AndroidManifest.xml:11:9-35
+13    </application>
+14
+15</manifest>

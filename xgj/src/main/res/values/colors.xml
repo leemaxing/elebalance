@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_default">#FAF9F9</color>
+    <color name="bg_head">#3C3C3C</color>
+    <color name="bg_table">#E2E1E1</color>
+    <color name="split">#FFFFFF</color>
+    
+    <color name="bg_title">#EEEEEE</color>
+    <color name="bg_bottom">#EEEEEE</color>
+
+
+    <color name="color2">#00FFFF</color>
+    <color name="color1">#FFE4C4</color>
+    <color name="color3">#DC143C</color>
+    <color name="color4">#FFFFFF</color>
+
+    <color name="green">#008000</color>
+
+    <color name="ungestureColor">#ffff0000</color>
+    <color name="gestureColor">#ff0000ff</color>
+
+    <!-- color -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="gray">#808080</color>
+    <color name="orange">#ff9900</color>
+    <color name="transparent">#00000000</color>
+    <color name="navibar">#1989FA</color>
+
+    <color name="material_light">#ffeeeeee</color>
+
+
+
+    <color name="app_title_bar_dark">#3C3C3C</color>
+    <color name="app_title_bar_light">#3C3C3C</color>
+
+
+    <color name="darker_gray">#AAAAAA</color>
+    <color name="half_gray">#33808080</color>
+
+    <color name="light_blue">#ACD6FF</color>
+    <color name="light_gray">#DCDCDC</color>
+
+    <color name="dark_blue">#3385ff</color>
+
+    <color name="btn_press_color">#5677fc</color>
+    <color name="btn_pressed_color">#3ca0ec</color>
+
+    <color name="content_gray">#fbfafd</color>
+    <!--灰色-->
+    <color name="gray_light">#f9f9f9</color>
+    <color name="gray_deep1">#212121</color>
+    <color name="gray_mid1">#9a9a9a</color>
+    <color name="gray_light1">#e0e0e0</color>
+    <color name="gray_light2">#F5F5F5</color>
+    <color name="gray_border">#dedede</color>
+    <color name="calendar_gray_light3">#808080</color>
+
+    <!--蓝色-->
+    <color name="blue_deep1">#0082d9</color>
+    <color name="blue_light1">#88bfcb</color>
+
+
+
+</resources>

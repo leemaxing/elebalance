@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/include_head" />
+
+    <!-- 表格 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/split"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_split"
+    	android:layout_margin="@dimen/padding_small" >
+
+        <!-- 第一列 -->
+        <LinearLayout
+            android:layout_width="@dimen/table_title_width"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_table"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:gravity="center"
+                android:text="%"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_split"
+                android:background="@color/split" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:gravity="center"
+                android:text="上行电流(A)" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_split"
+                android:background="@color/split" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:gravity="center"
+                android:text="下行电流(A)" />
+        </LinearLayout>
+
+        <!-- 第二列 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_split"
+            android:layout_weight="1"
+            android:background="@color/bg_table"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:gravity="center"
+                android:text="40%" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_split"
+                android:background="@color/split" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:ems="2"
+                android:gravity="left"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_split"
+                android:background="@color/split" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:ems="2"
+                android:gravity="left"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 第三列 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_split"
+            android:layout_weight="1"
+            android:background="@color/bg_table"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:gravity="center"
+                android:text="50%" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_split"
+                android:background="@color/split" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:ems="2"
+                android:gravity="left"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_split"
+                android:background="@color/split" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/table_item_height"
+                android:ems="2"
+                android:gravity="left"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="@dimen/button_width_default"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/button_margin_top"
+         android:background="@drawable/icon_btnbac"
+	    android:textColor="#FFFFFF"
+        android:text="判断" />
+
+</LinearLayout>

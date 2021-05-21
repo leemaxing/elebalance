@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.liicon.xgj"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+<!--    <application-->
+<!--        android:allowBackup="true">-->
+<!--        <activity android:name=".MainXgjActivity"/>-->
+<!--        <activity android:name=".BalanceActivity"/>-->
+<!--        <activity android:name=".AboutActivity"/>-->
+<!--        <activity android:name=".DownActivity"/>-->
+<!--        <activity android:name=".LimitSwitchActivity"/>-->
+<!--        <activity android:name=".UpActivity"/>-->
+<!--        <activity android:name=".UpAndDownZoomActivity"/>-->
+<!--        <activity android:name=".XGJMainActivity"/>-->
+<!--        <activity android:name=".XianSuQiActivity"/>-->
+<!--    </application>-->
+
+</manifest>

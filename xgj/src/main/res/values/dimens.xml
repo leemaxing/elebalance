@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="head_height">60dip</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    
+    <dimen name="margin_line_height">26dp</dimen>
+    <dimen name="margin_split">2dip</dimen>
+    <dimen name="table_line_height">8dip</dimen>
+    
+    <dimen name="table_item_height">40dip</dimen>
+    <dimen name="table_title_type_width">40dip</dimen>
+    <dimen name="table_title_name_width">40dip</dimen>
+    <dimen name="table_title_width">80dip</dimen>
+    
+    <dimen name="button_width_default">200dip</dimen>
+    
+    <dimen name="button_margin_top">60dip</dimen>
+    
+    <dimen name="txt_size_default">16dp</dimen>
+    <dimen name="txt_size_head">20dp</dimen>
+    <dimen name="txt_size_about">20dip</dimen>
+    <dimen name="txt_size_title">30dp</dimen>
+
+</resources>

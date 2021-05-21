@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_head" />
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <!-- 软件名称 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/padding_small" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/txt_size_title"
+                android:textColor="@color/material_blue_grey_800"
+                android:text="电梯小工具" />
+        </LinearLayout>
+
+        <!-- 版权 -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_alignParentBottom="true"
+	        android:padding="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_medium"
+	        android:orientation="vertical" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textSize="@dimen/txt_size_default"
+	            android:text="版权所有 @2014" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:textSize="@dimen/txt_size_default"
+	            android:text="软件著作版权号：@2014"
+	            android:visibility="invisible" />
+	    </LinearLayout>
+        
+        
+        <!-- 制作 -->
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:paddingLeft="@dimen/padding_large"
+	        android:paddingRight="@dimen/padding_large"
+	        android:paddingBottom="@dimen/padding_large"
+	        android:layout_marginBottom="@dimen/button_margin_top"
+	        android:orientation="vertical">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:gravity="left"
+	            android:textSize="@dimen/txt_size_about"
+	            android:text="设计者：何若泉" />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:gravity="left"
+	            android:textSize="@dimen/txt_size_about"
+	            android:text="发布者：东莞理工软件有限公司" />
+	    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

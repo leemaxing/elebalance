@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.max.elebanlence">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+
+        <activity android:name="com.liicon.xgj.MainXgjActivity"/>
+        <activity android:name="com.liicon.xgj.BalanceActivity"/>
+        <activity android:name="com.liicon.xgj.AboutActivity"/>
+        <activity android:name="com.liicon.xgj.DownActivity"/>
+        <activity android:name="com.liicon.xgj.LimitSwitchActivity"/>
+        <activity android:name="com.liicon.xgj.UpActivity"/>
+        <activity android:name="com.liicon.xgj.UpAndDownZoomActivity"/>
+        <activity android:name="com.liicon.xgj.XGJMainActivity"/>
+        <activity android:name="com.liicon.xgj.XianSuQiActivity"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

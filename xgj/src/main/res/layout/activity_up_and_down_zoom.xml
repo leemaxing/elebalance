@@ -1,0 +1,849 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical" >
+    <include layout="@layout/include_head" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="552dp"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="horizontal|vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:text="额定速度："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editText30"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" 
+                android:gravity="top"
+                />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="m/s"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_small"
+                android:layout_marginTop="@dimen/padding_small"
+                android:text="减行程设计："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+			<RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="是" />
+
+			<RadioButton
+			    android:id="@+id/radioButton2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:checked="true"
+			    android:text="否" />
+
+            </RadioGroup>
+
+			
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="顶部空间："
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView223"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="对重撞板与其缓冲器顶面间的垂直距离"
+                
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="标记值h"
+                
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="对重缓冲器压缩行程L"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:ems="10"
+                android:inputType="numberDecimal" >
+
+                <requestFocus android:layout_width="wrap_content" />
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_small"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+ 		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+             <TextView
+                 android:id="@+id/textView411"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/padding_small"
+                 android:layout_marginRight="@dimen/padding_small"
+                 android:text="④"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="17dp" />
+
+             <EditText
+                 android:id="@+id/editText13"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:ems="10"
+                 android:inputType="numberDecimal" />
+
+             <TextView
+                 android:id="@+id/textView16"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="×"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="17dp" />
+
+             <EditText
+                 android:id="@+id/editText14"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:ems="10"
+                 android:inputType="numberDecimal" />
+
+             <TextView
+                 android:id="@+id/textView17"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="×"
+                 android:textAppearance="?android:attr/textAppearanceSmall"
+                 android:textSize="17dp" />
+
+             <EditText
+                 android:id="@+id/editText15"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:ems="10"
+                 android:inputType="numberDecimal" />
+ 		    
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="对重导轨制导行程："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="平层时"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="压缩后"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_small"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+ 		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableLayout 
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content" 
+        		android:background="#dedcd2" 
+        		android:stretchColumns="*" > 
+
+        	<TableRow
+        		android:layout_width="fill_parent"
+        		android:layout_margin="0.5dip"
+        		android:background="#dedcd2" >
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:text="单位"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+ 
+ 			<TextView
+ 			    android:layout_margin="1dip"
+ 			    android:background="#ffffff"
+ 			    android:text="    ①    "
+ 			    android:textSize="20dip"
+ 			    android:textStyle="bold" />
+ 
+           <TextView
+               android:layout_margin="1dip"
+               android:background="#ffffff"
+               android:text="    ②    "
+               android:textSize="20dip"
+               android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="    ③a    "
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="    ③b    "
+                android:textSize="20dip"
+                android:textStyle="bold" />
+ 
+        </TableRow> 
+        <TableRow 
+            android:layout_margin="0.5dip" 
+            android:background="#dedcd2" > 
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="平层"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+ 
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow> 
+         <TableRow 
+            android:layout_margin="0.5dip" 
+            android:background="#dedcd2" > 
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="压缩后"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" 
+                android:focusable="false"/>
+ 
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:focusable="false" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold"
+                android:focusable="false" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" 
+                android:focusable="false"/>
+        </TableRow> 
+        	</TableLayout>
+       </LinearLayout>
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="底坑空间"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="（1）空间"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="×"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="×"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（m）"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="轿厢缓冲器压缩行程L"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="水平距离："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m×"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/editText31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_small"
+                android:text="轿厢撞板与其缓冲器顶面间的垂直距离h"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+			<EditText
+			    android:id="@+id/editText21"
+			    android:layout_width="128dp"
+			    android:layout_height="wrap_content"
+			    android:layout_marginLeft="@dimen/padding_small"
+			    android:ems="10"
+			    android:inputType="numberDecimal" />
+
+			<TextView
+			    android:id="@+id/textView27"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="m"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textSize="17dp" />
+            
+       	</LinearLayout>
+       	
+
+		
+ 
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableLayout 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content" 
+        		android:background="#dedcd2" 
+        		android:stretchColumns="*" > 
+        		 <TableRow 
+            android:layout_margin="0.5dip" 
+            android:background="#dedcd2" > 
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:text="单位"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+ 
+ 			<TextView
+ 			    android:layout_margin="1dip"
+ 			    android:background="#ffffff"
+ 			    android:text="    ①    "
+ 			    android:textSize="20dip"
+ 			    android:textStyle="bold" />
+ 
+           <TextView
+               android:layout_margin="1dip"
+               android:background="#ffffff"
+               android:text="    ②    "
+               android:textSize="20dip"
+               android:textStyle="bold" />
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="    ③a    "
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="    ③b    "
+                android:textSize="20dip"
+                android:textStyle="bold" />
+ 
+        </TableRow> 
+        <TableRow 
+            android:layout_margin="0.5dip" 
+            android:background="#dedcd2" > 
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="平层"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText26"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+ 
+            <EditText
+                android:id="@+id/editText27"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText28"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText29"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow> 
+         <TableRow 
+            android:layout_margin="0.5dip" 
+            android:background="#dedcd2" > 
+ 
+            <TextView
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="压缩后"
+                android:textSize="20dip"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" 
+                />
+ 
+            <EditText
+                android:id="@+id/editText23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" 
+                />
+
+            <EditText
+                android:id="@+id/editText24"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" 
+                />
+
+            <EditText
+                android:id="@+id/editText25"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dip"
+                android:background="#ffffff"
+                android:ems="2"
+                android:focusable="false"
+                android:inputType="numberDecimal"
+                android:textSize="20dip"
+                android:textStyle="bold" 
+                />
+
+        </TableRow> 
+        	</TableLayout>
+       </LinearLayout>
+       		<Button
+       		    android:id="@+id/button1"
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:layout_gravity="right"
+       		     android:background="@drawable/icon_btnbac"
+	            android:textColor="#FFFFFF"
+       		    android:text="开始计算" />
+
+       		<Button
+       		    android:id="@+id/button2"
+       		    android:layout_width="wrap_content"
+       		    android:layout_height="wrap_content"
+       		    android:layout_gravity="right"
+       		     android:background="@drawable/icon_btnbac"
+	            android:textColor="#FFFFFF"
+       		    android:text="计算极限开关" />
+       
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.liicon.xgj"
+4    android:versionCode="1"
+5    android:versionName="1.0" > <!-- <application -->
+6    <!-- android:allowBackup="true"> -->
+7    <!-- <activity android:name=".MainXgjActivity"/> -->
+8    <!-- <activity android:name=".BalanceActivity"/> -->
+9    <!-- <activity android:name=".AboutActivity"/> -->
+10    <!-- <activity android:name=".DownActivity"/> -->
+11    <!-- <activity android:name=".LimitSwitchActivity"/> -->
+12    <!-- <activity android:name=".UpActivity"/> -->
+13    <!-- <activity android:name=".UpAndDownZoomActivity"/> -->
+14    <!-- <activity android:name=".XGJMainActivity"/> -->
+15    <!-- <activity android:name=".XianSuQiActivity"/> -->
+16    <!-- </application> -->
+17    <uses-sdk
+18        android:minSdkVersion="1"
+18-->/Users/tomsmax/Documents/GitHub/elebalance/xgj/src/main/AndroidManifest.xml
+19        android:targetSdkVersion="30" />
+19-->/Users/tomsmax/Documents/GitHub/elebalance/xgj/src/main/AndroidManifest.xml
+20
+21</manifest>

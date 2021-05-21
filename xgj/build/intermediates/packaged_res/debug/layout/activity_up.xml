@@ -1,0 +1,534 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical" >
+    <include layout="@layout/navi_balance_layout" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="额定速度　："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/txt_size_default" />
+            <EditText
+                android:id="@+id/editText30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m/s" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:gravity="center_vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="减行程设计："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/txt_size_default" />
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="是" />
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_large"
+                    android:checked="true"
+                    android:text="否" />
+            </RadioGroup>
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium"
+            android:text="顶部空间　："
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_medium" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标记值h："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/txt_size_default" />
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="17dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textSize="17dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:gravity="top"
+            android:text="(对重撞板与其缓冲器顶面间的垂直距离)"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="压缩行程L："
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/txt_size_default" />
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="17dp"  />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m"
+                android:textSize="17dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:gravity="top"
+            android:text="(对重缓冲器压缩行程L)"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginRight="@dimen/padding_medium" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="④"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="×"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="×"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="17dp" />
+            <EditText
+                android:id="@+id/editText15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/txt_size_default"
+            android:text="对重导轨制导行程：" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/padding_medium"
+            android:layout_marginBottom="@dimen/padding_medium"
+            android:gravity="right" >
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:text="平层时:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="压缩后:"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+        
+        
+        
+        <!-- 表格 -->
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/split"
+            android:padding="@dimen/margin_split" >
+            <!-- 第一列 -->
+		    <LinearLayout
+	            android:layout_width="60dip"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:background="@color/bg_table" >
+            	<TextView
+            	    android:layout_width="match_parent"
+                   	android:layout_height="@dimen/table_item_height"
+                    android:gravity="center"
+                    android:text="单位"
+                    android:textSize="18dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="平层" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="压塑后" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="参考值" />
+            </LinearLayout>
+            
+            <!-- 第二列 -->
+		    <LinearLayout
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="@dimen/margin_split"
+	            android:orientation="vertical"
+	            android:background="@color/bg_table" >
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="①" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <!-- 第三列 -->
+		    <LinearLayout
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="@dimen/margin_split"
+	            android:orientation="vertical"
+	            android:background="@color/bg_table" >
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="②" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <!-- 第四列 -->
+		    <LinearLayout
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="@dimen/margin_split"
+	            android:orientation="vertical"
+	            android:background="@color/bg_table" >
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="③a" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+            <!-- 第五列 -->
+		    <LinearLayout
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="@dimen/margin_split"
+	            android:orientation="vertical"
+	            android:background="@color/bg_table" >
+                <TextView
+                    android:layout_width="match_parent"
+                	android:layout_height="@dimen/table_item_height"
+                   	android:gravity="center"
+                    android:text="③b" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_split"
+                    android:background="@color/split" />
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/table_item_height"
+                    android:gravity="left"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:textSize="20dip"
+                    android:textStyle="bold" />
+            </LinearLayout>
+		</LinearLayout>
+		
+		<!-- 按钮 -->
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="@dimen/padding_small"
+		    android:orientation="horizontal" >
+	        <Button
+	            android:id="@+id/button1"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	             android:background="@drawable/icon_btnbac"
+	            android:textColor="#FFFFFF"
+	            android:text="判断" />
+	        <Button
+	            android:id="@+id/button2"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	             android:background="@drawable/icon_btnbac"
+	            android:textColor="#FFFFFF"
+	            android:text="计算底坑空间" />
+		</LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

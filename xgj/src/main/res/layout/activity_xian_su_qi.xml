@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_default"
+    android:orientation="vertical" >
+
+    <include layout="@layout/navi_balance_layout" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_margin="@dimen/padding_medium" >
+		<TextView
+			android:id="@+id/textView18"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="额定速度　："
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/txt_size_default" />
+		<EditText
+			android:id="@+id/editText9"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:inputType="numberDecimal" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_margin="@dimen/padding_medium" >
+		<TextView
+			android:id="@+id/textView19"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="安全钳方式："
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/txt_size_default" />
+		<Spinner
+			android:id="@+id/spinner1"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/padding_medium" >
+		<TextView
+			android:id="@+id/textView20"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="保护装置　："
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textSize="@dimen/txt_size_default" />
+		<Spinner
+			android:id="@+id/spinner2"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/padding_medium"
+		android:layout_marginRight="@dimen/padding_medium"
+		android:layout_marginBottom="@dimen/padding_medium"
+		android:layout_marginTop="@dimen/margin_line_height" >
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="@string/XiaoYanZhi"
+			android:textSize="@dimen/padding_large" />
+		<RadioGroup
+			android:id="@+id/radioGroup1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+			<RadioButton
+				android:id="@+id/radio0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:text="@string/ms" />
+			<RadioButton
+				android:id="@+id/radio1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/mmin" />
+		</RadioGroup>
+	</LinearLayout>
+
+
+	<!-- 表格 -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@color/split"
+		android:padding="@dimen/margin_split" >
+		<!-- 第一列 -->
+		<LinearLayout
+			android:layout_width="@dimen/table_title_width"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@color/bg_table" >
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:layout_marginTop="@dimen/table_item_height"
+				android:background="@color/split" />
+
+			<!-- 电汽 -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				<!-- 上下 -->
+				<LinearLayout
+					android:layout_width="@dimen/table_title_type_width"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/table_item_height"
+						android:gravity="center"
+						android:text="@string/down" />
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/margin_split"
+						android:background="@color/split" />
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/table_item_height"
+						android:gravity="center"
+						android:text="@string/up" />
+				</LinearLayout>
+
+				<View
+					android:layout_width="@dimen/margin_split"
+					android:layout_height="match_parent"
+					android:background="@color/split" />
+
+				<TextView
+					android:layout_width="@dimen/table_title_name_width"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="电\n气" />
+			</LinearLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<!-- 机械 -->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				<!-- 上下 -->
+				<LinearLayout
+					android:layout_width="@dimen/table_title_type_width"
+					android:layout_height="wrap_content"
+					android:orientation="vertical" >
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/table_item_height"
+						android:gravity="center"
+						android:text="@string/down" />
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/margin_split"
+						android:background="@color/split" />
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="@dimen/table_item_height"
+						android:gravity="center"
+						android:text="@string/up" />
+				</LinearLayout>
+
+				<View
+					android:layout_width="@dimen/margin_split"
+					android:layout_height="match_parent"
+					android:background="@color/split" />
+
+				<TextView
+					android:layout_width="@dimen/table_title_name_width"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:text="机\n械" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- 第二列 -->
+		<LinearLayout
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="@dimen/margin_split"
+			android:orientation="vertical"
+			android:background="@color/bg_table" >
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="center"
+				android:text="轿厢侧"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<!-- 分割线 -->
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText1"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText3"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText5"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText7"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="@dimen/margin_split"
+			android:orientation="vertical"
+			android:background="@color/bg_table" >
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="center"
+				android:text="对重侧"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<!-- 分割线 -->
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText2"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText4"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText6"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_split"
+				android:background="@color/split" />
+
+			<EditText
+				android:id="@+id/editText8"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/table_item_height"
+				android:gravity="left"
+				android:ems="4"
+				android:inputType="numberDecimal"
+				android:textSize="20dip"
+				android:textStyle="bold" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- 按钮 -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/padding_small"
+		android:orientation="horizontal" >
+		<Button
+			android:id="@+id/buttonStart1"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/icon_btnbac"
+			android:textColor="#FFFFFF"
+			android:text="判断" />
+		<Button
+			android:id="@+id/button1"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/icon_btnbac"
+			android:textColor="#FFFFFF"
+			android:text="计算顶部空间" />
+	</LinearLayout>
+	
+</LinearLayout>

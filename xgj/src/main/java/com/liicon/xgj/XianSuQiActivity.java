@@ -13,8 +13,8 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.liicon.utils.StringUtils;
 import com.liicon.xgj.base.BaseActivity;
-import com.liicon.utils.lang.StringUtils;
 
 /**
  * 限速器

@@ -79,7 +79,7 @@
                 android:id="@+id/editText1"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/table_item_height"
-                android:ems="2"
+                
                 android:gravity="left"
                 android:inputType="numberDecimal"
                 android:textSize="20dip"
@@ -94,7 +94,7 @@
                 android:id="@+id/editText3"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/table_item_height"
-                android:ems="2"
+                
                 android:gravity="left"
                 android:inputType="numberDecimal"
                 android:textSize="20dip"
@@ -126,7 +126,7 @@
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/table_item_height"
-                android:ems="2"
+                
                 android:gravity="left"
                 android:inputType="numberDecimal"
                 android:textSize="20dip"
@@ -141,7 +141,7 @@
                 android:id="@+id/editText4"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/table_item_height"
-                android:ems="2"
+                
                 android:gravity="left"
                 android:inputType="numberDecimal"
                 android:textSize="20dip"
